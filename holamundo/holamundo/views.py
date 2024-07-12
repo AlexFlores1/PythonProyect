@@ -12,3 +12,9 @@ def adulto(request, edad):
         return HttpResponse("eres mayor de edad")
     else:
         return HttpResponse("NO eres mayor de edad")
+    
+def nombre(request, name):
+    if name == "alex":
+        return HttpResponse("Hola baby")
+    else:
+        return HttpResponse("Tu no eres mi papá cuyeyo jiji")

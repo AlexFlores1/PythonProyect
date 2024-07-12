@@ -9,4 +9,5 @@ urlpatterns = [
     path('saludo/',views.Saludo),
     path('despedida/', views.despedida),
     path('adulto/<int:edad>/', views.adulto, name='adulto'),
+    path('nombre/<str:name>/', views.nombre),
 ]
