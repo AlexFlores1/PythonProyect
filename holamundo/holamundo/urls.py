@@ -8,4 +8,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludo/',views.Saludo),
     path('despedida/', views.despedida),
+    path('adulto/<int:edad>/', views.adulto, name='adulto'),
 ]
