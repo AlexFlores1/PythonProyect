@@ -9,10 +9,20 @@
     <h1>Hola {{name}}</h1>
     <h3>Categorias</h3>
     <ul>
-        {% for category in categories%}
-            <li>{{categories}}</li>
-         {%end for%}
+        {%comment%}
+            En la parte inferior recorremos las categorias y las pintamos 
+        {%endcomment%}
+        {% for Categorias in categories %}
+            {% if Categorias == 'Alexi' %}
+                <li>{{Categorias|upper}}</li>
+            {% else%}
+                <li>{{Categorias}}</li>
+            {% endif %}
+            
+        {% endfor %}
+        <h5>categorias : {{categories|Length}}</h5>
     </ul>
+    
     
 </body>
 </html>

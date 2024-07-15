@@ -21,5 +21,5 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('simple/', views.simple),
-    path('dinamico/<str:name>/', views.dinamico)
+    path('dinamico/<str:name>/', views.dinamico),
 ]
