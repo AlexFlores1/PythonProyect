@@ -1,1 +1,1 @@
-estoy mejor sin ti asi me queo solo 
+estoy mejor sin ti así me queo solo 
