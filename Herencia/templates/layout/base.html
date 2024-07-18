@@ -4,23 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=" {% static 'style.css'%}">
-    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style_v2.css' %}">
+    {%block style%}{%endblock%}
+    <title>{% block title %} {%endblock%}</title>
 </head>
 <body>
     <nav>
         <ul>
+            <h3>Logo</h3>
            <li><a href="">herencia</a></li>
            <li><a href="">otra</a></li>
            <li><a href="">ejemplo</a></li>
 
+
         </ul>
     </nav>
     <main>
-        <h1>Hola Mundo</h1>
+        {% block content %} {%endblock%}
     </main>
     <footer>
-        <p>Me encanta python</p>
+        {% block script %} {%endblock%}
     </footer>
 </body>
 </html>

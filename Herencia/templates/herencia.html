@@ -1,26 +1,6 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=" {% static 'style.css'%}">
-    <title>Document</title>
-</head>
-<body>
-    <nav>
-        <ul>
-           <li><a href="">herencia</a></li>
-           <li><a href="">otra</a></li>
-           <li><a href="">ejemplo</a></li>
+{% extends './layout/base.html' %}
 
-        </ul>
-    </nav>
-    <main>
-        <h1>Hola Mundo</h1>
-    </main>
-    <footer>
-        <p>Me encanta python</p>
-    </footer>
-</body>
-</html>
+{% block title%} Herencia {%endblock%}
+{% block content %} 
+<h1>Hola herencia en python </h1>
+{%endblock%}

@@ -1,4 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: aquamarine;
+}
+
 ul{
     list-style-type: none;
     display: flex;
+    color: blue;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    padding: 20px;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 25px;
+}
+h1{
+    color: blueviolet;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    width: 100%;
+    padding: 50px;
 }
