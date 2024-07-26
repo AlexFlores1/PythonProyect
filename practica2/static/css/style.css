@@ -1,0 +1,32 @@
+:root{
+    --color-primary: #EEC000;
+    --color-secondary: #F39B00 ;
+    --colof-text: #707789;
+    --color-bg: #dedede;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav img{
+    margin: 25px;
+    height: 50px;
+    width: 50px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 20px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+}

@@ -9,21 +9,10 @@
     <title>{% block title %} {%endblock%}</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <h3>Logo</h3>
-           <li><a href="">herencia</a></li>
-           <li><a href="">otra</a></li>
-           <li><a href="">ejemplo</a></li>
-
-
-        </ul>
-    </nav>
+    {%include  'layout/parcial/menu.html'%}
     <main>
         {% block content %} {%endblock%}
     </main>
-    <footer>
-        {% block script %} {%endblock%}
-    </footer>
+    {%include 'layout/parcial/footer.html'%}
 </body>
 </html>

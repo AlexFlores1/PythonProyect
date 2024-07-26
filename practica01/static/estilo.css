@@ -1,0 +1,25 @@
+nav{
+    background-color: aqua;
+}
+ul{   
+    list-style: none;
+    display: flex;
+}
+ul li{
+    
+    padding: 40px;
+}
+ul li a{
+    text-decoration: none;
+}
+
+main{
+    align-content: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+footer{
+    background-color: aqua;
+    padding: 60px;
+}
