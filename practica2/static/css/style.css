@@ -1,32 +1,107 @@
-:root{
+:root {
     --color-primary: #EEC000;
     --color-secondary: #F39B00 ;
     --colof-text: #707789;
     --color-bg: #dedede;
+    --font-title: fresh;
+    --font-text: cafe;
 }
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: var(--font-text);
 }
-nav img{
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--font-title);
+}
+nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 100px;
+    background-color: var(--color-primary);
+}
+nav img {
     margin: 25px;
     height: 50px;
     width: 50px;
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-nav ul li{
+nav ul li {
     padding: 20px;
 
 }
 
-nav ul li a {
+ nav ul li a {
     text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--font-title);
+}
+nav ul li a:hover{
+    color: white;
+}
+main{
+    background-color: var(--color-bg);
+    justify-content: flex-start;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+.about{
+    display: flex;
+
+}
+.aboutcontent{
+    width: 350px;
+    padding: 25px;
+}
+footer{
+    width: 100vw;
+    min-height: 150px;
+    background-color: var(--colof-text);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img{
+    margin: 25px;  
+}
+footer ul{
+    list-style-type: none;
+}
+footer ul li a{
+    color: var(--color-bg);
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: fresh ;
+    src: url('../font/Fresh\ Fruit.ttf');
+}
+@font-face {
+    font-family:cafe ;
+    src: url(../font/cafe.ttf);
+}
+
+.fotos{
+    margin-top: 50px;
+    display: flex;
+    justify-self: center ;
+    width: 50%;
+    flex-wrap: wrap
 }
